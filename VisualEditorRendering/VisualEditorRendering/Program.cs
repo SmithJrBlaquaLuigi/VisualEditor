@@ -23,7 +23,7 @@ namespace VisualEditor.cs
                 Game game = new Game(window);
                 window.Title = String.Format("Visual Editor BETA V0.0.0.1, OpenTK 2.0.0 Version");
                 window.Run();
-                //test this.
+                //test this. 
             }
         }
     }
