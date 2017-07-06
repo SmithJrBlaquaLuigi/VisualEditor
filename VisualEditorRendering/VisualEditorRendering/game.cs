@@ -45,7 +45,7 @@ namespace VisualEditor.cs
             GL.Flush();
 
             GL.Begin(PrimitiveType.Quads);
-            //load up the quads immediately!
+            //load up the quads immediately! 
 
             GL.Color3(Color.BlueViolet);
             GL.Vertex2(0, 0);
