@@ -25,12 +25,12 @@ namespace VisualEditor.cs
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-
+            
         }
 
         void window_Load(object sender, EventArgs e)
         {
-            GL.ClearColor(Color.FromArgb(5, 5, 25));
+            GL.ClearColor(Color.FromArgb(2, 65, 245));
         }
 
         private void Window_UpdateFrame(object sender, FrameEventArgs e)
@@ -40,8 +40,8 @@ namespace VisualEditor.cs
 
         private void Window_RenderFrame(object sender, FrameEventArgs e)
         {
+            
             GL.Clear(ClearBufferMask.ColorBufferBit);
-
             GL.Flush();
             window.SwapBuffers();
         }
