@@ -40,9 +40,22 @@ namespace VisualEditor.cs
 
         private void Window_RenderFrame(object sender, FrameEventArgs e)
         {
-            
+
             GL.Clear(ClearBufferMask.ColorBufferBit);
             GL.Flush();
+
+            GL.Begin(PrimitiveType.Quads);
+
+            GL.Color3(Color.BlueViolet);
+            GL.Vertex2(0, 0);
+            GL.Color3(Color.OrangeRed);
+            GL.Vertex2(0.9f, 0);
+            GL.Color3(Color.YellowGreen);
+            GL.Vertex2(1, -0.9f);
+            GL.Color3(Color.Green);
+            GL.Vertex2(0, -1);
+
+            GL.End();
             window.SwapBuffers();
         }
     }
